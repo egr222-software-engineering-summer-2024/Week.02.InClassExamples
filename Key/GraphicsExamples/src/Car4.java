@@ -18,15 +18,15 @@ public class Car4 {
         drawCar(g, x, y, 100);
     }
 
-public static void drawCar(Graphics g, int x, int y, int width) {
+    public static void drawCar(Graphics g, int x, int y, int size) {
         g.setColor(Color.BLACK);
-        g.fillRect(x, y, width, width/2);
+        g.fillRect(x, y, size, size / 2);
 
         g.setColor(Color.RED);
-        g.fillOval(x + width/10,y + 2 * width / 5, width/5, width/5);
-        g.fillOval(x + 7 * width / 10, y + 2 * width / 5, width/5, width/5);
+        g.fillOval(x + size / 10, y + 2 * size / 5, size / 5, size / 5);
+        g.fillOval(x + 7 * size / 10, y + 2 * size / 5, size / 5, size / 5);
 
         g.setColor(Color.CYAN);
-        g.fillRect(x + 7 * width / 10, y + width / 10, 3 * width / 10, width/5);
+        g.fillRect(x + 7 * size / 10, y + size / 10, 3 * size / 10, size / 5);
     }
 }
